@@ -1,0 +1,153 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 560px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+header,main,footer {
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.img-hold {
+    width: 100%;
+}
+
+.img-hold img{
+    width: 100%;
+    height: 27rem;
+}
+
+
+.score-header .header {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: .5rem 0;
+    margin-left: 1.7rem;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.score-content {
+    text-align: left;
+    padding: 2rem;
+}
+
+.score-content .title {
+    font-size: 4.5rem;
+}
+
+.score-content .subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    width: 18rem;
+    border-style: none;
+    padding: 2rem 0;
+    border-radius: .5rem;
+}
+
+.label.is-large {
+    font-size: 3rem;
+}
+
+.select:not(.is-multiple) {
+    height: 4rem;
+}
+
+.select select:not([multiple]) {
+    padding-right: 4rem;
+}
+
+.select.is-rounded select {
+    border-radius: 29048.6rem;
+    padding-left: 1.6rem;
+}
+
+.select select {
+    font-size: 1.6rem;
+}
+
+.primary {
+    background-color:#48c78e;
+}
+
+.info {
+    background-color:#3e8ed0;
+}
+
+.danger {
+    background-color: #f14668;
+}
+
+button#player1.btn.primary:disabled,
+button#player2.btn.info:disabled
+{
+        background-color: rgba(239, 239, 239);
+        border-color: rgba(118, 118, 118, 0.3);
+        color: rgba(16, 16, 16, 0.48);
+        border-radius: .5rem;
+        cursor: not-allowed;
+}
+
+.btn button:disabled #player1{
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+    border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+    cursor: not-allowed;
+}
+
+#player1 {
+    flex-shrink: 1;
+}
+
+#player2{
+    flex-shrink: 1;
+    color: white;
+}
+
+#reset{
+    flex-shrink: 2;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color:red;
+}
+
+@media (max-width: 590px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    html {
+        font-size: 40%;
+    }
+}
